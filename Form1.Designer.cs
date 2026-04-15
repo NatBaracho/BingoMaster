@@ -2,15 +2,8 @@
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             lblNumeroGrande = new Label();
@@ -39,61 +28,74 @@
             // 
             lblNumeroGrande.AutoSize = true;
             lblNumeroGrande.Font = new Font("Segoe UI", 72F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblNumeroGrande.Location = new Point(270, 9);
+            lblNumeroGrande.ForeColor = Color.Green;
+            lblNumeroGrande.Location = new Point(189, 5);
+            lblNumeroGrande.Margin = new Padding(2, 0, 2, 0);
             lblNumeroGrande.Name = "lblNumeroGrande";
-            lblNumeroGrande.Size = new Size(246, 191);
+            lblNumeroGrande.Size = new Size(164, 128);
             lblNumeroGrande.TabIndex = 0;
             lblNumeroGrande.Text = "00";
             lblNumeroGrande.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnSortear
             // 
-            btnSortear.Location = new Point(22, 232);
+            btnSortear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSortear.ForeColor = SystemColors.HotTrack;
+            btnSortear.Location = new Point(15, 139);
+            btnSortear.Margin = new Padding(2);
             btnSortear.Name = "btnSortear";
-            btnSortear.Size = new Size(189, 64);
+            btnSortear.Size = new Size(132, 38);
             btnSortear.TabIndex = 1;
-            btnSortear.Text = "SORTEAR PRÓXMO";
+            btnSortear.Text = "SORTEAR PRÓXIMO";
             btnSortear.UseVisualStyleBackColor = true;
+            btnSortear.Click += BtnSortear_Click;
             // 
             // btnReiniciar
             // 
-            btnReiniciar.Location = new Point(552, 232);
+            btnReiniciar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnReiniciar.ForeColor = Color.Red;
+            btnReiniciar.Location = new Point(386, 139);
+            btnReiniciar.Margin = new Padding(2);
             btnReiniciar.Name = "btnReiniciar";
-            btnReiniciar.Size = new Size(189, 64);
+            btnReiniciar.Size = new Size(132, 38);
             btnReiniciar.TabIndex = 2;
             btnReiniciar.Text = "REINICIAR JOGO";
             btnReiniciar.UseVisualStyleBackColor = true;
+            btnReiniciar.Click += btnReiniciar_Click;
             // 
             // lsthistorico
             // 
             lsthistorico.FormattingEnabled = true;
-            lsthistorico.Location = new Point(9, 359);
+            lsthistorico.Location = new Point(6, 215);
+            lsthistorico.Margin = new Padding(2);
             lsthistorico.Name = "lsthistorico";
-            lsthistorico.Size = new Size(778, 304);
+            lsthistorico.Size = new Size(546, 184);
             lsthistorico.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(9, 331);
+            label1.Location = new Point(6, 199);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(206, 25);
+            label1.Size = new Size(133, 15);
             label1.TabIndex = 4;
             label1.Text = "HISTÓRICO DE SORTEIO";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(793, 685);
+            ClientSize = new Size(555, 411);
             Controls.Add(label1);
             Controls.Add(lsthistorico);
             Controls.Add(btnReiniciar);
             Controls.Add(btnSortear);
             Controls.Add(lblNumeroGrande);
+            Margin = new Padding(2);
+            MaximizeBox = false;
             Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Text = "BingoMaster";
             ResumeLayout(false);
             PerformLayout();
         }
